@@ -11,7 +11,7 @@ export const mountApp = ({ element, options }) => {
     .then((data) => {
       import(`${baseURL}${data['index.html'].file}`).then(() => {
         const adminMfe = document.createElement('new-react-18-mfe');
-        adminMfe.setAttribute('options', JSON.stringify(rest));
+        adminMfe.options = rest;
         element.appendChild(adminMfe);
       });
     });

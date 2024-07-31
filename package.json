@@ -13,8 +13,10 @@
     "format": "prettier --write . && pnpm format:svg"
   },
   "dependencies": {
+    "moment": "2.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-mfe": "git@github.com:manish-agrawal-freshworks/react-16-mfe.git#2f5132d6b4cc1e5c1350cb2278a41c664ab8b015",
     "react-router-dom": "^6.22.3"
   },
   "devDependencies": {
