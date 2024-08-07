@@ -8,12 +8,18 @@ importers:
 
   .:
     dependencies:
+      moment:
+        specifier: 2.6.0
+        version: 2.6.0
       react:
         specifier: ^18.2.0
         version: 18.3.1
       react-dom:
         specifier: ^18.2.0
         version: 18.3.1(react@18.3.1)
+      react-mfe:
+        specifier: git@github.com:manish-agrawal-freshworks/react-16-mfe.git#2f5132d6b4cc1e5c1350cb2278a41c664ab8b015
+        version: https://codeload.github.com/manish-agrawal-freshworks/react-16-mfe/tar.gz/2f5132d6b4cc1e5c1350cb2278a41c664ab8b015
       react-router-dom:
         specifier: ^6.22.3
         version: 6.24.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -480,6 +486,10 @@ packages:
   '@pkgr/core@0.1.1':
     resolution: {integrity: sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
+
+  '@remix-run/router@1.11.0':
+    resolution: {integrity: sha512-BHdhcWgeiudl91HvVa2wxqZjSHbheSgIiDvxrF1VjFzBzpTtuDPkOdOi3Iqvc08kXtFkLjhbS+ML9aM8mJS+wQ==}
+    engines: {node: '>=14.0.0'}
 
   '@remix-run/router@1.17.1':
     resolution: {integrity: sha512-mCOMec4BKd6BRGBZeSnGiIgwsbLGp3yhVqAD8H+PxiRNEHgDpZb8J1TnrSDlg97t0ySKMQJTHCWBCmBpSmkF6Q==}
@@ -1759,6 +1769,12 @@ packages:
     resolution: {integrity: sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw==}
     engines: {node: '>=16 || 14 >=14.17'}
 
+  moment@2.5.0:
+    resolution: {integrity: sha512-dN31ouoiP0Nz6rWQrxNnmSVVaaV/luTHI1rkn/wZakXnA7XjncWLuqHh1Lvqs54sAGFMrGVK9iJZbeRhP7x3ug==}
+
+  moment@2.6.0:
+    resolution: {integrity: sha512-M3MTvRWyj4UOYRFeH427oyqxaqFO3HHdL+CqlaQ2jRxdi4mpIQq15uyRN8NO0/PY3+C9ljoznyNqM6YZhj1phg==}
+
   ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
 
@@ -1991,6 +2007,11 @@ packages:
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
+  react-dom@16.14.0:
+    resolution: {integrity: sha512-1gCeQXDLoIqMgqD3IO2Ah9bnf0w9kzhwN5q4FGnHZ67hBm9yePzB5JJAIQCc8x3pFnNlwFq4RidZggNAAkzWWw==}
+    peerDependencies:
+      react: ^16.14.0
+
   react-dom@18.3.1:
     resolution: {integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==}
     peerDependencies:
@@ -1999,9 +2020,21 @@ packages:
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
+  react-mfe@https://codeload.github.com/manish-agrawal-freshworks/react-16-mfe/tar.gz/2f5132d6b4cc1e5c1350cb2278a41c664ab8b015:
+    resolution: {tarball: https://codeload.github.com/manish-agrawal-freshworks/react-16-mfe/tar.gz/2f5132d6b4cc1e5c1350cb2278a41c664ab8b015}
+    version: 0.0.0
+    engines: {node: '>=18.16.1'}
+
   react-refresh@0.14.2:
     resolution: {integrity: sha512-jCvmsr+1IUSMUyzOkRcvnVbX3ZYC6g9TDrDbFuFmRDq7PD4yaGbLKNQL6k2jnArV8hjYxh7hVhAZB6s9HDGpZA==}
     engines: {node: '>=0.10.0'}
+
+  react-router-dom@6.18.0:
+    resolution: {integrity: sha512-Ubrue4+Ercc/BoDkFQfc6og5zRQ4A8YxSO3Knsne+eRbZ+IepAsK249XBH/XaFuOYOYr3L3r13CXTLvYt5JDjw==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
 
   react-router-dom@6.24.1:
     resolution: {integrity: sha512-U19KtXqooqw967Vw0Qcn5cOvrX5Ejo9ORmOtJMzYWtCT4/WOfFLIZGGsVLxcd9UkBO0mSTZtXqhZBsWlHr7+Sg==}
@@ -2010,11 +2043,21 @@ packages:
       react: '>=16.8'
       react-dom: '>=16.8'
 
+  react-router@6.18.0:
+    resolution: {integrity: sha512-vk2y7Dsy8wI02eRRaRmOs9g2o+aE72YCx5q9VasT1N9v+lrdB79tIqrjMfByHiY5+6aYkH2rUa5X839nwWGPDg==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      react: '>=16.8'
+
   react-router@6.24.1:
     resolution: {integrity: sha512-PTXFXGK2pyXpHzVo3rR9H7ip4lSPZZc0bHG5CARmj65fTT6qG7sTngmb6lcYu1gf3y/8KxORoy9yn59pGpCnpg==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: '>=16.8'
+
+  react@16.14.0:
+    resolution: {integrity: sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==}
+    engines: {node: '>=0.10.0'}
 
   react@18.3.1:
     resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
@@ -2090,6 +2133,9 @@ packages:
   safe-regex-test@1.0.3:
     resolution: {integrity: sha512-CdASjNJPvRa7roO6Ra/gLYBTzYzzPyyBXxIMdGW3USQLyjWEls2RgW5UBTXaQVp+OrpeCK3bLem8smtmheoRuw==}
     engines: {node: '>= 0.4'}
+
+  scheduler@0.19.1:
+    resolution: {integrity: sha512-n/zwRWRYSUj0/3g/otKDRPMh6qv2SYMWNq85IEa8iZyAv8od9zDYpGSnpBEjNgcMNq6Scbu5KfIPxNF72R/2EA==}
 
   scheduler@0.23.2:
     resolution: {integrity: sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==}
@@ -2833,6 +2879,8 @@ snapshots:
     optional: true
 
   '@pkgr/core@0.1.1': {}
+
+  '@remix-run/router@1.11.0': {}
 
   '@remix-run/router@1.17.1': {}
 
@@ -4255,6 +4303,10 @@ snapshots:
 
   minipass@7.1.2: {}
 
+  moment@2.5.0: {}
+
+  moment@2.6.0: {}
+
   ms@2.1.2: {}
 
   mz@2.7.0:
@@ -4461,6 +4513,14 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
+  react-dom@16.14.0(react@16.14.0):
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      prop-types: 15.8.1
+      react: 16.14.0
+      scheduler: 0.19.1
+
   react-dom@18.3.1(react@18.3.1):
     dependencies:
       loose-envify: 1.4.0
@@ -4469,7 +4529,21 @@ snapshots:
 
   react-is@16.13.1: {}
 
+  react-mfe@https://codeload.github.com/manish-agrawal-freshworks/react-16-mfe/tar.gz/2f5132d6b4cc1e5c1350cb2278a41c664ab8b015:
+    dependencies:
+      moment: 2.5.0
+      react: 16.14.0
+      react-dom: 16.14.0(react@16.14.0)
+      react-router-dom: 6.18.0(react-dom@16.14.0(react@16.14.0))(react@16.14.0)
+
   react-refresh@0.14.2: {}
+
+  react-router-dom@6.18.0(react-dom@16.14.0(react@16.14.0))(react@16.14.0):
+    dependencies:
+      '@remix-run/router': 1.11.0
+      react: 16.14.0
+      react-dom: 16.14.0(react@16.14.0)
+      react-router: 6.18.0(react@16.14.0)
 
   react-router-dom@6.24.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
@@ -4478,10 +4552,21 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       react-router: 6.24.1(react@18.3.1)
 
+  react-router@6.18.0(react@16.14.0):
+    dependencies:
+      '@remix-run/router': 1.11.0
+      react: 16.14.0
+
   react-router@6.24.1(react@18.3.1):
     dependencies:
       '@remix-run/router': 1.17.1
       react: 18.3.1
+
+  react@16.14.0:
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      prop-types: 15.8.1
 
   react@18.3.1:
     dependencies:
@@ -4583,6 +4668,11 @@ snapshots:
       call-bind: 1.0.7
       es-errors: 1.3.0
       is-regex: 1.1.4
+
+  scheduler@0.19.1:
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
 
   scheduler@0.23.2:
     dependencies:
